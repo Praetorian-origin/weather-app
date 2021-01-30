@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <main>
+    <div id="form">
+      <h1>Weather</h1>
+      <form id="city-form">
+        <input id="city-input" autocomplete="off" type="text" placeholder="Search a Town..." />
+      </form>
+
+      <div id="err-msg"></div>
+
+      <!-- Rounded switch for switching from F° to °C-->
+
+        <label class="switch">
+          <input id="check" type="checkbox" />
+          <span class="slider round"></span>
+          <span id="F">F°</span>
+          <span id="C">°C</span>
+        </label>
+      </div>
+
+
+    <div id="weather-info">
+      <h1>
+        <span id="city">City</span>
+        <span>,</span>
+        <span id="country">Country</span>
+      </h1>
+
+      <img id="imgWeather" src="" />
+      <div id="weather-details">
+        <p><span id="real_temperature"></span><span class="unit"></span></p>
+        <span>Feels like </span><span id="feellike_temperature"></span>
+        <span class="unit"></span>
+
+        |
+        <span id="descr_weather"></span>
+        |
+
+        <span id="humidity"></span>%
+      </div>
+    </div>
+  </main>
+
+  <div class="lds-dual-ring hidden"></div>
+  <script defer src="script.js"></script>
+</html>
